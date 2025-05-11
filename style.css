@@ -1,171 +1,190 @@
-/* General */
+/* =========================
+   RESET & GENERAL SETTINGS
+   ========================= */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body{
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  
-  
-  
-  /* Utility */
-  
-  .flex{
-    display: flex;
-  }
-  
-  .justify_center{
-    justify-content: center;
-  }
-  
-  .align_center{
-    align-items: center;
-  }
-  
-  .flex_center_center{
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .container{
-    width: 1200px;
-    min-height: 20px;
-  }
-  
-  
-  /* Header */
-  #header_menu{
-    padding: 30px 0;
-  }
-  
-  
-  /* header ---> logo */
-  .navigation_menu .logo {
-    width: 40%;
-  }
-  
-  .navigation_menu .logo img{
-    width: 100px;
-  }
-  
-  .navigation_menu .logo a{
-    margin-left: 30px;
-    text-decoration: none;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #707070;
-  }
-  
-  .navigation_menu .logo :nth-child(2){
-    color: black;
-  }
-  
-  /* header ---> choise */
-  .navigation_menu .choise {
-    width: 60%;
-    justify-content: flex-end;
-    position: relative;
-  }
-  
-  .navigation_menu .choise li {
-    display: inline;
-    list-style: none;
-    margin-left: 30px;
-    position: relative;
-    padding: 5px 0;
-  }
-  
-  .navigation_menu .choise li.actions{
-    position: relative;
-  }
-  
-  .navigation_menu .choise li > a{
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 15px;
-    color: #707070;
-  }
-  
-  .navigation_menu .choise li > a:hover{
-    color: hsl(0, 0%, 13%);
-  }
-  
-  
-  .navigation_menu .choise li > i{
-    position: absolute;
-    font-size: 10px;
-    bottom: 7px;
-    right: -10px;
-    color: rgb(75, 75, 75);
-  }
-  
-  .navigation_menu .choise li:hover i{
-    transform: rotate(180deg);
-  }
-  
-  .navigation_menu .choise button{
-    padding: 10px 20px;
-    margin-left: 25px;
-    border-radius: 20px;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    background: #EB008E;
-    transition: background-color .3s;
-    color: white;
-    font-weight: bold;
-  }
-  
-  .navigation_menu .choise button:hover{
-    background-color: rgb(210, 0, 126);
-  }
-  
-  .navigation_menu .choise .drop_down{
-    display: none;
-    position: absolute;
-    border-radius: 5px;
-    left: -30px;
-    top: 38px;
-    padding: 0 15px;
-    
-    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.15);
-  -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.15);
+/* Reset dei margini e padding per evitare inconsistenze nei browser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Imposta l'altezza del body a 100vh e definisce il font principale */
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5; /* Sfondo leggero per maggiore leggibilità */
+}
+
+/* =========================
+ UTILITY CLASSES
+ ========================= */
+
+/* Classe flex per semplificare l'uso di display flex */
+.flex {
+  display: flex;
+}
+
+/* Allinea gli elementi orizzontalmente al centro */
+.justify_center {
+  justify-content: center;
+}
+
+/* Allinea gli elementi verticalmente al centro */
+.align_center {
+  align-items: center;
+}
+
+/* Centra sia in verticale che orizzontale */
+.flex_center_center {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenitore principale con larghezza massima */
+.container {
+  width: 1200px;
+  min-height: 20px;
+  margin: 0 auto; /* Centra il contenitore */
+}
+
+/* =========================
+ HEADER STYLING
+ ========================= */
+
+#header_menu {
+  padding: 30px 0;
+  background-color: #fff; /* Sfondo bianco per il menu */
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1); /* Ombra leggera per separarlo dal contenuto */
+}
+
+/* =========================
+ LOGO SECTION
+ ========================= */
+
+.navigation_menu .logo {
+  width: 40%;
+}
+
+.navigation_menu .logo img {
+  width: 100px;
+}
+
+/* Stile dei link nel logo */
+.navigation_menu .logo a {
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #707070;
+}
+
+.navigation_menu .logo a:first-of-type {
+  color: black;
+}
+
+/* =========================
+ MENU & DROPDOWN
+ ========================= */
+
+.navigation_menu .choise {
+  width: 60%;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.navigation_menu .choise li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 30px;
+  position: relative;
+  padding: 5px 0;
+}
+
+/* Stile dei link nel menu */
+.navigation_menu .choise li > a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  color: #707070;
+  transition: color 0.3s;
+}
+
+.navigation_menu .choise li > a:hover {
+  color: hsl(0, 0%, 13%);
+}
+
+/* Icona dropdown */
+.navigation_menu .choise li > i {
+  position: absolute;
+  font-size: 10px;
+  bottom: 7px;
+  right: -10px;
+  color: rgb(75, 75, 75);
+  transition: transform 0.3s;
+}
+
+.navigation_menu .choise li:hover i {
+  transform: rotate(180deg);
+}
+
+/* =========================
+ BUTTON STYLING
+ ========================= */
+
+.navigation_menu .choise button {
+  padding: 10px 20px;
+  margin-left: 25px;
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: #EB008E;
+  transition: background-color 0.3s;
+  color: white;
+  font-weight: bold;
+}
+
+.navigation_menu .choise button:hover {
+  background-color: rgb(210, 0, 126);
+}
+
+/* =========================
+ DROPDOWN MENU STYLING
+ ========================= */
+
+.navigation_menu .choise .drop_down {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  left: -30px;
+  top: 38px;
+  padding: 0 15px;
+  background-color: white; /* Sfondo bianco per il menu */
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.15);
-  
-  }
-  
-  
-  .navigation_menu .choise .drop_down a{
-    display: block;
-    padding: 15px 15px;
-    /* line-height: 30px; */
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 15px;
-    color: #6e6e6e;
-    white-space: nowrap; 
-  }
-  
-  .navigation_menu .choise .drop_down a:hover{
-    color: hsl(0, 0%, 13%);
-  }
-  
-  .navigation_menu .choise .drop_down a sup{
-    font-size: 11px;
-    color:#EB008E;
-  }
-  
-  
-  .navigation_menu .choise .drop_down .box{
-    margin: 10px;
-    padding: 10px 0 ;
-    line-height: 40px;
-  }
-  
+}
+
+/* Stile dei link nel dropdown */
+.navigation_menu .choise .drop_down a {
+  display: block;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  color: #6e6e6e;
+  white-space: nowrap; 
+}
+
+.navigation_menu .choise .drop_down a:hover {
+  color: hsl(0, 0%, 13%);
+}
+
+.navigation_menu .choise .drop_down a sup {
+  font-size: 11px;
+  color: #EB008E;
+}
+
+/* =========================
+ FINISHED!
+ ========================= */

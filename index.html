@@ -4,41 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Titolo e icona -->
+  <!-- Titolo della pagina e icona del sito -->
   <title>Revolut</title>
-
-  <!-- Css -->
-  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="img/icon.png">
 
-  <!-- Font -->
+  <!-- Collegamento ai fogli di stile -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Google -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
 
-
 <body>
 
+  <!-- Header: contiene il menu di navigazione -->
   <header id="header_menu" class="flex justify_center">
 
-    <div class="container ">
+    <div class="container">
       <nav class="navigation_menu flex">
 
+        <!-- Logo e opzioni di navigazione -->
         <div class="logo flex align_center">
-          <img src="img/logo-revolut.png" alt="">
+          <img src="img/logo-revolut.png" alt="Logo Revolut"> 
           <a href="#">Personale</a>
-          <a href="#">Bussines</a>
+          <a href="#">Business</a> <!-- Corretto "Bussines" → "Business" -->
         </div>
 
+        <!-- Menu con varie sezioni -->
         <div class="choise flex align_center">
           <ul class="action_list flex">
             <li><a href="#">Tariffazione</a></li>
             <li class="actions">
               <a href="#">Conti</a>
-               <div class="drop_down flex ">
+               <div class="drop_down flex">
                 <a href="#">Standard</a>
                 <a href="#">Premium</a>
                 <a href="#">Metal</a>
@@ -46,11 +48,11 @@
             </li>
             <li class="actions">
               <a href="#">Prodotti</a>
-              <div class="drop_down flex ">
-                <a href="#">Tresferimento di denaro</a>
+              <div class="drop_down flex">
+                <a href="#">Trasferimento di denaro</a>
                 <a href="#">Vault</a>
                 <a href="#">Gestione budget</a>
-                <a href="#">Perk <sup>beta</sup> </a>
+                <a href="#">Perk <sup>beta</sup></a>
                 <a href="#">Criptovaluta</a>
                 <a href="#">Assicurazione smartphone</a>
                 <a href="#">Assicurazione medica internazionale</a>
@@ -58,22 +60,21 @@
             </li>
             <li class="actions">
               <a href="#">Azienda</a>
-              <div class="drop_down flex ">
-                <a href="#">Tresferimento</a>
+              <div class="drop_down flex">
+                <a href="#">Trasferimento</a>
                 <a href="#">Invia e richiedi</a>
                 <a href="#">Salvadanaio</a>
                 <a href="#">Gestione budget</a>
               </div>
             </li>
-            <li>
-              <a href="#">Aiuto</a>
-            </li>
+            <li><a href="#">Aiuto</a></li>
+            
+            <!-- Selezione lingua con dropdown -->
             <li class="actions">
               <i class="fas fa-chevron-down"></i>
-              <a href="#" class:
-              ="lang" >IT</a>
+              <a href="#" class="lang">IT</a> 
               
-              <div class="drop_down flex ">
+              <div class="drop_down flex">
                 <a href="#">Inghilterra</a>
                 <a href="#">Germania</a>
                 <a href="#">Francia</a>
@@ -82,42 +83,28 @@
             </li>
           </ul>
           
+          <!-- Pulsante per scaricare l'app -->
           <button>Scarica l'app</button>
         </div>
       
       </nav>
     </div>
-    
 
   </header>
-  
 
   <main>
-   
-
+    <!-- Contenuto principale della pagina -->
   </main>
 
   <footer>
-   
-
+    <!-- Footer della pagina -->
   </footer>
 
-
-
-
-
-
-
-
-
-  <!-- JS -->
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+  <!-- Inclusione libreria jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- Inclusione del file JavaScript -->
   <script src="js/main.js"></script>
   
 </body>
-
-
 </html>
