@@ -1,54 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Titolo della pagina e icona del sito -->
+  <!-- Definizione del set di caratteri e responsività su dispositivi mobili -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Titolo della pagina -->
   <title>Revolut</title>
-  <link rel="icon" href="img/icon.png">
 
-  <!-- Collegamento ai fogli di stile -->
-  <link rel="stylesheet" href="style.css">
+  <!-- Icona del sito (favicon) -->
+  <link rel="icon" href="img/icon.png" />
 
-  <!-- Font Google -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <!-- Collegamento al file CSS personalizzato -->
+  <link rel="stylesheet" href="style.css" />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Google Font: Roboto, con pesi 400, 500 e 700 -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet" />
 
+  <!-- Font Awesome: per usare icone come il menu hamburger o le frecce -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 
 <body>
 
-  <!-- Header: contiene il menu di navigazione -->
-  <header id="header_menu" class="flex justify_center">
-
+  <!-- HEADER: sezione superiore della pagina -->
+  <header id="header_menu">
     <div class="container">
-      <nav class="navigation_menu flex">
+      <nav class="navigation_menu">
 
-        <!-- Logo e opzioni di navigazione -->
-        <div class="logo flex align_center">
-          <img src="img/logo-revolut.png" alt="Logo Revolut"> 
+        <!-- LOGO e link iniziali (Personale / Business) -->
+        <div class="logo">
+          <img src="img/logo-revolut.png" alt="Logo Revolut">
           <a href="#">Personale</a>
-          <a href="#">Business</a> <!-- Corretto "Bussines" → "Business" -->
+          <a href="#">Business</a>
         </div>
 
-        <!-- Menu con varie sezioni -->
-        <div class="choise flex align_center">
-          <ul class="action_list flex">
+        <!-- MENU PRINCIPALE -->
+        <div class="choise">
+          <ul class="action_list">
+            
+            <!-- Link semplice -->
             <li><a href="#">Tariffazione</a></li>
+
+            <!-- Link con MENU A TENDINA -->
             <li class="actions">
               <a href="#">Conti</a>
-               <div class="drop_down flex">
+              <div class="drop_down">
                 <a href="#">Standard</a>
                 <a href="#">Premium</a>
                 <a href="#">Metal</a>
-              </div> 
+              </div>
             </li>
+
+            <!-- Altri dropdown -->
             <li class="actions">
               <a href="#">Prodotti</a>
-              <div class="drop_down flex">
+              <div class="drop_down">
                 <a href="#">Trasferimento di denaro</a>
                 <a href="#">Vault</a>
                 <a href="#">Gestione budget</a>
@@ -58,23 +65,25 @@
                 <a href="#">Assicurazione medica internazionale</a>
               </div>
             </li>
+
             <li class="actions">
               <a href="#">Azienda</a>
-              <div class="drop_down flex">
+              <div class="drop_down">
                 <a href="#">Trasferimento</a>
                 <a href="#">Invia e richiedi</a>
                 <a href="#">Salvadanaio</a>
                 <a href="#">Gestione budget</a>
               </div>
             </li>
+
+            <!-- Link semplice -->
             <li><a href="#">Aiuto</a></li>
-            
-            <!-- Selezione lingua con dropdown -->
+
+            <!-- Dropdown della LINGUA -->
             <li class="actions">
-              <i class="fas fa-chevron-down"></i>
-              <a href="#" class="lang">IT</a> 
-              
-              <div class="drop_down flex">
+              <i class="fas fa-chevron-down"></i> <!-- Icona freccia -->
+              <a href="#" class="lang">IT</a>
+              <div class="drop_down">
                 <a href="#">Inghilterra</a>
                 <a href="#">Germania</a>
                 <a href="#">Francia</a>
@@ -82,29 +91,29 @@
               </div>
             </li>
           </ul>
-          
-          <!-- Pulsante per scaricare l'app -->
+
+          <!-- PULSANTE CALL-TO-ACTION -->
           <button>Scarica l'app</button>
         </div>
-      
       </nav>
     </div>
-
   </header>
 
+  <!-- CONTENUTO PRINCIPALE della pagina -->
   <main>
-    <!-- Contenuto principale della pagina -->
+    <!-- Inserisci qui il contenuto principale -->
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <!-- Footer della pagina -->
+    <!-- Inserisci qui il footer -->
   </footer>
 
-  <!-- Inclusione libreria jQuery -->
+  <!-- Inclusione libreria jQuery (necessaria per gli script) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
-  <!-- Inclusione del file JavaScript -->
+
+  <!-- Inclusione script JS personalizzato -->
   <script src="js/main.js"></script>
-  
+
 </body>
 </html>
