@@ -1,8 +1,8 @@
 Revolut Header
-Un progetto per creare un header navigabile moderno e accessibile per siti web, con HTML, CSS e JavaScript/jQuery.
+Un progetto per creare un header navigabile moderno, accessibile e responsive per siti web, con HTML, CSS e JavaScript/jQuery.
 
 Descrizione
-Questo progetto implementa un header dinamico con un menu a tendina (dropdown) usando jQuery. Il codice è ottimizzato per garantire performance migliori, leggibilità e accessibilità.
+Questo progetto implementa un header dinamico e responsive con un menu a tendina (dropdown) usando jQuery. Il codice è ottimizzato per garantire performance migliori, leggibilità e accessibilità.
 
 Tecnologie utilizzate
 HTML5, CSS3 e JavaScript + jQuery 
